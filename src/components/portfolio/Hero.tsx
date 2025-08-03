@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-24">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -17,20 +17,21 @@ const Hero = () => {
       <div className="absolute inset-0 bg-background/80" />
       
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <div className="animate-fade-in-up">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-hero-gradient bg-clip-text text-transparent animate-glow-pulse">
-            Tanmay Singla
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 animate-fade-in-up [animation-delay:0.2s]">
-            Computer Engineering Graduate Student & Embedded Systems Engineer
-          </h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up [animation-delay:0.4s]">
-            Passionate about embedded systems, AI, and software security. Currently pursuing M.S. in Computer Engineering at Purdue University with expertise in firmware development, autonomous systems, and cybersecurity research.
-          </p>
-        </div>
+      <div className="relative z-10 text-center max-w-7xl mx-auto px-16">
+        <div className="animate-fade-in-up py-12">
+          <div className="mb-16">
+            <h1 className="text-4xl md:text-6xl font-bold bg-hero-gradient bg-clip-text text-transparent animate-glow-pulse tracking-tight px-8 py-4">
+              Tanmay Singla
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 animate-fade-in-up [animation-delay:0.2s]">
+              Computer Engineering Graduate Student
+            </h2>
+            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up [animation-delay:0.4s]">
+              Passionate about embedded systems, AI, and software security. Currently pursuing M.S. in Computer Engineering at Purdue University with expertise in firmware development, autonomous systems, and cybersecurity research.
+            </p>
+          </div>
 
-        {/* Action Buttons */}
+          {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in-up [animation-delay:0.6s]">
           <Button 
             size="lg" 
@@ -78,6 +79,7 @@ const Hero = () => {
         >
           <ChevronDown className="w-8 h-8 text-muted-foreground hover:text-primary transition-colors mx-auto" />
         </div>
+      </div>
       </div>
     </section>
   );

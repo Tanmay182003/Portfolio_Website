@@ -2,11 +2,11 @@ import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { 
   Code2, 
-  Database, 
-  Palette, 
   Globe, 
-  Smartphone, 
-  Cloud,
+  Cpu,
+  Microchip,
+  Brain,
+  Wrench,
   GitBranch,
   Settings
 } from "lucide-react";
@@ -14,34 +14,53 @@ import {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Core Languages",
       icon: <Code2 className="w-6 h-6" />,
-      skills: ["Python", "C/C++", "MATLAB", "Java"]
+      skills: [
+        "C/C++",
+        "Python",
+        "MATLAB",
+        "Verilog/VHDL",
+        "JavaScript",
+        "HTML/CSS"
+      ]
     },
     {
-      title: "Embedded & Hardware",
-      icon: <Database className="w-6 h-6" />,
-      skills: ["Embedded Systems", "Firmware Development", "Verilog/ASIC Design", "STM32/Microcontrollers"]
+      title: "Hardware & Embedded",
+      icon: <Microchip className="w-6 h-6" />,
+      skills: [
+        "STM32",
+        "RTOS",
+        "PCB Design",
+        "Signal Analysis",
+        "RTK GNSS",
+        "LTspice"
+      ]
     },
     {
-      title: "AI & Frameworks",
-      icon: <Smartphone className="w-6 h-6" />,
-      skills: ["ROS/PX4", "OpenCV/Computer Vision", "Django", "Machine Learning"]
+      title: "Platforms & Tools",
+      icon: <Wrench className="w-6 h-6" />,
+      skills: [
+        "Linux/Unix",
+        "Git",
+        "Docker",
+        "AWS",
+        "QuestaSim/ModelSim",
+        "Altium Designer"
+      ]
     },
     {
-      title: "Tools & Platforms",
-      icon: <Cloud className="w-6 h-6" />,
-      skills: ["Git/Linux", "AWS/Cloud", "Docker", "Simulink"]
+      title: "AI & Robotics",
+      icon: <Brain className="w-6 h-6" />,
+      skills: [
+        "ROS/PX4",
+        "Computer Vision",
+        "LLMs",
+        "Sensor Fusion",
+        "OpenCV",
+        "TensorFlow"
+      ]
     }
-  ];
-
-  const tools = [
-    { name: "STM32CubeIDE", icon: <Code2 className="w-8 h-8 text-primary" /> },
-    { name: "MATLAB/Simulink", icon: <Palette className="w-8 h-8 text-accent" /> },
-    { name: "TeraTerm", icon: <Globe className="w-8 h-8 text-primary-glow" /> },
-    { name: "Git/Linux", icon: <GitBranch className="w-8 h-8 text-primary" /> },
-    { name: "Docker", icon: <Settings className="w-8 h-8 text-accent" /> },
-    { name: "AWS/PostgreSQL", icon: <Cloud className="w-8 h-8 text-primary-glow" /> }
   ];
 
   return (
@@ -58,7 +77,7 @@ const Skills = () => {
         </div>
 
         {/* Skill Categories */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <Card 
               key={index}
@@ -72,33 +91,13 @@ const Skills = () => {
               </div>
               <ul className="list-disc ml-6 space-y-2">
                 {category.skills.map((skill, skillIndex) => (
-                  <li key={skillIndex} className="text-sm text-foreground">{skill}</li>
+                  <li key={skillIndex} className="text-sm text-muted-foreground">
+                    {skill}
+                  </li>
                 ))}
               </ul>
             </Card>
           ))}
-        </div>
-
-        {/* Tools & Technologies */}
-        <div>
-          <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
-            Tools & Technologies
-          </h3>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
-            {tools.map((tool, index) => (
-              <Card 
-                key={index}
-                className="p-6 text-center bg-card-gradient border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-glow-primary/20 group cursor-pointer"
-              >
-                <div className="mb-3 flex justify-center group-hover:animate-float">
-                  {tool.icon}
-                </div>
-                <p className="text-sm font-medium text-muted-foreground group-hover:text-foreground transition-colors">
-                  {tool.name}
-                </p>
-              </Card>
-            ))}
-          </div>
         </div>
       </div>
     </section>
