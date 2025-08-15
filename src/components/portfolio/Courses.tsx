@@ -10,12 +10,7 @@ interface Course {
 
 const Courses = () => {
   const courses: Course[] = [
-    {
-      code: "ECE 559",
-      name: "VLSI Design Laboratory",
-      description: "Design of Very Large Scale Integrated Circuits, CMOS technology, circuit characterization, logic design and simulation.",
-      tags: ["Hardware", "VLSI", "Digital Design"]
-    },
+  // VLSI course removed per resume
     {
       code: "ECE 573",
       name: "Compilers and Translator Writing Systems",
@@ -59,9 +54,9 @@ const Courses = () => {
       tags: ["Embedded Systems", "Computer Architecture"]
     },
     {
-      code: "CS 251",
+      code: "ECE 368",
       name: "Data Structures and Algorithms",
-      description: "Algorithm design and analysis, fundamental data structures, and problem-solving techniques.",
+      description: "Algorithm design and analysis, advanced data structures, and problem-solving techniques for engineers.",
       tags: ["Algorithms", "Programming"]
     }
   ];

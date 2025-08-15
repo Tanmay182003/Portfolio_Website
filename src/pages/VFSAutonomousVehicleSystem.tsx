@@ -13,7 +13,8 @@ const VFSAutonomousVehicleSystem = () => (
           VFS Autonomous Vehicle System
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Leading avionics integration for an autonomous vehicle system with sensor fusion, real-time navigation, and obstacle avoidance using LiDAR, stereo cameras, and RTK GNSS on Jetson platform.
+          <b>Purdue University, West Lafayette, IN</b><br/>
+          Technical Lead for VFS Drone Project. Led avionics and software integration for a drone-based autonomous vehicle system. Developed real-time sensor fusion, navigation, and obstacle avoidance using LiDAR, stereo cameras, and RTK GNSS on NVIDIA Jetson. Designed flight control algorithms, optimized embedded code for robust field deployment, and coordinated a multidisciplinary team for successful field tests.
         </p>
       </div>
 
@@ -22,8 +23,8 @@ const VFSAutonomousVehicleSystem = () => (
         <Card className="overflow-hidden bg-card-gradient border-primary/20">
           <div className="relative h-[400px] overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1558618047-3c2c0cf7c9ae?w=1200&h=800&fit=crop"
-              alt="VFS Autonomous Vehicle"
+              src="https://images.unsplash.com/photo-1464983953574-0892a716854b?w=1200&h=800&fit=crop"
+              alt="VFS Drone Project"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/80" />

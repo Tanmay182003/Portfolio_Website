@@ -13,7 +13,8 @@ const WaterHeaterControlSystem = () => (
           Water Heater Control System
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Designed modular controls algorithm for Heating Control System at Rheem Manufacturing. Created simulation environment and performed test-driven development using Simulink and C.
+          <b>Rheem Manufacturing, Montgomery, AL</b><br/>
+          Controls Engineering Intern (Summer 2022). Designed modular controls algorithm for a next-generation water heater system. Developed and validated simulation environments in Simulink, performed test-driven development in C, and conducted hardware-in-the-loop testing. Optimized control logic for energy efficiency and reliability, and collaborated with cross-functional teams for system integration.
         </p>
       </div>
 
@@ -22,8 +23,8 @@ const WaterHeaterControlSystem = () => (
         <Card className="overflow-hidden bg-card-gradient border-primary/20">
           <div className="relative h-[400px] overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1581092335397-9583aa1e4c96?w=1200&h=800&fit=crop"
-              alt="Water Heater Control System"
+              src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=1200&h=800&fit=crop"
+              alt="Rheem Water Heater Internship"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/80" />
